@@ -5,11 +5,35 @@
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <tit1e>Это главная страница</tit1e>
         <title>Гав гав</title>
+        <link rel="stylesheet" href="style.css  ">
+        <style>
+            nav a{
+                margin-right: 250px;
+                font-size: 30px;
+                font-weight: 800;
+                color: black;
+            }
+            footer{
+                background-color: aquamarine;
+                padding: 15px 0;
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 50px;
+
+            }
+            foorer a{
+                font-size: 30px;
+            }
+            #footer{
+                margin-top: 50px;
+            }
+        </style>
     </head>
     <body>
-        <nav>
-            <a href="about.html"><h1>О нас</h1></a>
-            <a href="category/cat.html"><h1> Категория</h1></a>
+        <nav style="background-color: aqua; width: 100%; padding: 47px; margin-bottom: 40px;">
+            <a href="#footer">Якорь на подвал</a>
+            <a href="about.html" target="_blank">О нас</a>
+            <a href="category/cat.html">Категория</a>
             <a href="https://journal.top-academy.ru/ru/main/dashboard/page/index">Внешний</a>
         </nav>
         <h1>Это Index</h1>
@@ -17,5 +41,54 @@
             Debitis minima repellat sapiente sint saepe minus, modi quam, dicta quis, quo excepturi libero. 
             Vero voluptas nobis aliquid quos dolorem repudiandae est.</p>
         <img src="ava.png" alt="">
+        <form action="https://www.google.com/search" method="GET">
+            <h2>
+                <tit1e>Google search</tit1e>
+            </h2>
+            <p>
+                <input type="text" placeholder="Гугл поиск" name="q">
+            </p>
+            <h2>
+                <tit1e>Регистрация</tit1e>
+            </h2>
+            <p>
+                <input type="text" placeholder="Имя" name="user_name" minlength="2">
+            </p>
+            <p>
+                <input type="number" placeholder="Возраст" name="age" min="18">
+            </p>
+            <p>
+                <input type="email" placeholder="Email">
+            </p>
+            <p>
+                <input type="password" placeholder="Пароль" name="pass">
+            </p>
+                <input type="color" value="#EE1111">
+            <p>
+                <label for="">Соглашение с правилами</label>
+                <input type="checkbox" checked required>
+            </p>
+            <p>
+                <label for="">Выбор радио станции 1</label>
+                <input type="radio" name="radio"><br>
+            </p>
+            <p>
+                <label for="">Выбор радио станции 2</label>
+                <input type="radio" name="radio"><br>
+            </p>
+            <p>
+                <label for="">Выбор радио станции 3</label>
+                <input type="radio" name="radio"><br>
+            </p>
+            <p>
+            <input type="file">
+            </p>    
+            <input type="submit">
+        </form>
+        <footer id="footer">
+             <a href="about.html">О нас</a>
+            <a href="category/cat.html"> Категория</a>
+            <a href="https://journal.top-academy.ru/ru/main/dashboard/page/index">Внешний</a>
+        </footer>
     </body>
 </html>
